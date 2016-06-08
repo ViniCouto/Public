@@ -1,4 +1,8 @@
 	
+	-------------- Tutorial de comandos básicos para utilizar o git
+	-------------- Vinícius Couto --- ViniCouto (GitHub)
+	-------------- 08/06/2016
+	
 	1.			Criar pasta:															mkdir nome_pasta
 	2.			Entrar na pasta:													cd nome_pasta
 	3.			Transformar a pasta em repositório do git: 			git init
@@ -26,3 +30,9 @@
 	19.2.	Puxar repositório para sua máquina:						git clone url
 	20. 		Adicionar permissões p/ colaborador 
 				enviar commit no repositório:								Settings  ->  Collaborators
+	21. 		Verificar quais branchs tem no repositório:				git branch
+	22. 		Criar nova branch:												git branch nome_do_branch
+	23.		Direcionar para trabalhar na nova branch:				git checkout nome_do_branch
+	24. 		Enviar branch para repositório remoto:					git push -u nome_do_branch
+	25.		Trazer alterações da branch:									git pull
+	26.		Mostrar branchs remotas:										git branch -r
