@@ -24,4 +24,5 @@
 	19. 		Pegar um repositório para sua máquina:				
 	19.1.	Copiar url do repositório
 	19.2.	Puxar repositório para sua máquina:						git clone url
-	20. 		Adicionar colaboradores no repositório:					Settings  ->  Collaborators
+	20. 		Adicionar permissões p/ colaborador 
+				enviar commit no repositório:								Settings  ->  Collaborators
