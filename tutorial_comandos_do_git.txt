@@ -8,7 +8,20 @@
 	7.			Git monitorar arquivo:											git add tutorial_comandos_do_git.txt
 	8.			Criar commit com mensagem:								git commit -m "Criando o Tutorial de comandos do Git"
 	9.			Indicar quem está fazendo as alterações:				git config user.name "seu nome"
-	9.			Indicar quem está fazendo as alterações:				git config user.email "seu email"
-	10.		Adicionar alterações no arquivo:							git
-	11.
-	12.
+	9.1.		Indicar quem está fazendo as alterações:				git config user.email "seu email"
+	10.		Adicionar alterações no arquivo:							git add tutorial_comandos_do_git.txt
+	11.		Mostrar histórico de commits:								git log
+	12.		Mostrar histórico de commits em detalhes:			git whatchanged
+	13.		Mostrar histórico de commits em detalhes
+				o que foi alterado:												git whatchanged -p
+	14.		Criar conta no GitHub:
+	15.		Criar repositório no GitHub:
+	16.		Copiar url do repositório remoto
+	17.		Configurar repositório local para usar o
+				repositório remoto:	
+	17.1.	Nomear repositório remoto: 								git remote add origin url
+	18. 		Jogar arquivos no repositório remoto:					git push origin master
+	19. 		Pegar um repositório para sua máquina:				
+	19.1.	Copiar url do repositório
+	19.2.	Puxar repositório para sua máquina:						git clone url
+	20. 		Adicionar colaboradores no repositório:					Settings  ->  Collaborators
