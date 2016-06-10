@@ -1,0 +1,7 @@
+	
+	-------------- Tutorial de set up do WAMP + COMPOSER + framework LARAVEL
+	-------------- Vinícius Couto --- ViniCouto (GitHub)
+	-------------- 09062016
+	
+	1.			Instalar Wamp (PHP + APACHE + MYSQL)
+	1.			Criar pasta					
