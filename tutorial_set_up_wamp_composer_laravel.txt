@@ -1,7 +1,15 @@
 	
 	-------------- Tutorial de set up do WAMP + COMPOSER + framework LARAVEL
 	-------------- Vinícius Couto --- ViniCouto (GitHub)
-	-------------- 09062016
+	-------------- 09/06/2016
 	
 	1.			Instalar Wamp (PHP + APACHE + MYSQL)
-	1.			Criar pasta					
+				Obs: Todos os projetos devem ser criados dentro da pasta www
+	2.			Instalar Composer (na instalar passar o php)			
+	3.			No cmd verificar se composer está rodando: 										composer
+	4.			Fazer download do framework Laravel: 												https://github.com/laravel/laravel
+	5.			Criar pasta no www:																				teste_laravel			
+	6.			Descompactar arquivo laravel-master dentro da pasta teste_laravel
+	7. 		Pelo cmd entrar na pasta teste_laravel
+	8.			Fazer o download de todas dependência do framework:						composer install
+	9.			Testar laravel no browser: 																	http://localhost/teste_laravel/laravel/public/
