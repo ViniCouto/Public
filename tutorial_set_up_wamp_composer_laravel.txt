@@ -11,5 +11,46 @@
 	5.			Criar pasta no www:																				teste_laravel			
 	6.			Descompactar arquivo laravel-master dentro da pasta teste_laravel
 	7. 		Pelo cmd entrar na pasta teste_laravel
-	8.			Fazer o download de todas dependência do framework:						composer install
-	9.			Testar laravel no browser: 																	http://localhost/teste_laravel/laravel/public/
+	8.			Fazer o download de todas dependência do framework:						composer install  (demora alguns minutos)
+	9.			Testes do Laravel
+	9.1.		Teste 1
+				Testar laravel no browser: 																	http://localhost/teste_laravel/laravel/public/
+				No meu pc este teste não deu certo, mostrando o erro no console: 		Failed to load resource: the server responded with a status of 500 (Internal Server Error)
+	9.2.		Teste 2
+				Dentro da pasta ...\www\teste_laravel\laravel rodei o comando: 			php artisan serve
+				O cmd indicou que o laravel server foi iniciado 
+				no http://localhost:8000/
+				Porém, no browser ocorreu o mesmo problema anterior 
+				(Failed to load resource: the server responded with a status
+				of 500 (Internal Server Error))
+				
+				Solução:
+							1. Na pasta ...\www\teste_laravel\laravel troque o nome
+							do arquivo .env.example para .env.
+							2. No cmd utilize o comando: 													php artisan key: generate   (para o Teste 1)
+							3. No cmd utilize o comando: 													php artisan serve  (para o Teste 2)
+________________________________________________________________________________________________________________________________________________________							
+________________________________________________________________________________________________________________________________________________________							
+				
+				------------------------ Criando Controllers
+	10. 		Abrir o arquivo routes.php e deletar tudo
+	11. 		Criar rota:																							Route::get('/', function () {  return 'Teste do Laravel';  });
+	12.		Criar controller em app/Http/Controllers												ContaController.php (exemplo)
+	13. 		É preciso declarar este controle e método dele em routes.php				Route::get('/contas', 'ContaController@listaTPContas');
+	
+				------------------------ Criando conexão com o BD
+	14.		Com o BD criado (mysql), no arquivo database.php colocar os dados
+				do seu DB_DATABASE, DB_USERNAME e DB_PASSWORD
+	15.		No ContaController.php é preciso declarar o uso do BD							use Illuminate\Support\Facades\DB;
+	15.		Problema:
+				Eu tive problemas para estabelecer a conexão com o BD						(No supported encrypter found. The cipher and / or key length are invalid.)
+				
+				Solução:
+				Por já ter feito um php artisan key:generate
+				Foi preciso trocar manualmente está nova key no arquivo .env no
+				campo APP_KEY
+				Mais detalhes em: 																				http://laravel.io/forum/06-09-2015-no-supported-encrypter-found-the-cipher-and-or-key-length-are-invalid
+
+				------------------------ Adicionando Scafold (OPICIONAL)
+	A.			Para versão 5.1 em diante do Laravel -> adicionar biblioteca Scafold: 	https://github.com/bestmomo/scafold
+	B. 		Seguir os passos de instaação do Scafold descritos no link (GitHub)
