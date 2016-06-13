@@ -31,7 +31,9 @@
 							3. No cmd utilize o comando: 													php artisan serve  (para o Teste 2)
 ________________________________________________________________________________________________________________________________________________________							
 ________________________________________________________________________________________________________________________________________________________							
-				
+
+	Model-View-Controller (MVC)				
+	
 				------------------------ Criando Controllers
 	10. 		Abrir o arquivo routes.php e deletar tudo
 	11. 		Criar rota:																							Route::get('/', function () {  return 'Teste do Laravel';  });
@@ -54,3 +56,8 @@ ________________________________________________________________________________
 				------------------------ Adicionando Scafold (OPICIONAL)
 	A.			Para versão 5.1 em diante do Laravel -> adicionar biblioteca Scafold: 	https://github.com/bestmomo/scafold
 	B. 		Seguir os passos de instaação do Scafold descritos no link (GitHub)
+________________________________________________________________________________________________________________________________________________________							
+________________________________________________________________________________________________________________________________________________________							
+
+	 Eloquent ORM
+	16.		php artisan make:model nomeTabela -m
