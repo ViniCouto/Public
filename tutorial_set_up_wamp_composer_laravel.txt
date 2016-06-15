@@ -60,4 +60,10 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________________							
 
 	 Eloquent ORM
-	16.		php artisan make:model nomeTabela -m
+	16.		Criar uma classe para representar a tabela 											php artisan make:model nomeTabela
+	
+			php artisan migrate
+			
+			Rodar todos seeds																					php artisan db:seed 
+			Rodar seed para uma classe especifica 														php artisan db:seed --class=ProdutoTableSeeder
+	
