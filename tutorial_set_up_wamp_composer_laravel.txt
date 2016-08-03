@@ -1,7 +1,7 @@
-	--------------DESCRIÇÃO
-				- Tutorial de set up do WAMP + COMPOSER + framework LARAVEL + MVC (Model-View-Controller)
-				- Vinícius Couto --- ViniCouto (GitHub)
-				- Data de criação do do: 09/06/2016
+	
+	----------Tutorial de set up do WAMP + COMPOSER + framework LARAVEL + MVC (Model-View-Controller)
+	----------Vinícius Couto --- ViniCouto (GitHub)
+	----------Data de criação: 09/06/2016
 	
 	--------------WAMP
 	1.			Instalar Wamp (PHP + APACHE + MYSQL + Composer)

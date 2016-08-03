@@ -1,7 +1,7 @@
 	
 	----------Tutorial de comandos básicos para utilizar o git
 	----------Vinícius Couto --- ViniCouto (GitHub)
-	----------08/06/2016
+	----------Data de criação: 08/06/2016
 	
 	1.			Criar pasta:																mkdir nome_pasta
 	2.			Entrar na pasta:														cd nome_pasta
