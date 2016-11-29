@@ -7,8 +7,9 @@
 	2.			Entrar na pasta:														cd nome_pasta
 	3.			Transformar a pasta em repositório do git: 			git init
 	4.			Criar arquivos:
-	5.			Mostrar quais arquvos o git está controlando:		git ls-files
+	5.			Mostrar quais arquivos o git está controlando:		git ls-files
 	6.			Status:																	git status
+	**.		Adicionar ao monitoramento do git todos novos arquivos: git add -A
 	7.			Git monitorar arquivo:												git add tutorial_comandos_do_git.txt
 	8.			Criar commit com mensagem:									git commit -m "Criando o Tutorial de comandos do Git"
 	9.			Indicar quem está fazendo as alterações:				git config user.name "seu nome"

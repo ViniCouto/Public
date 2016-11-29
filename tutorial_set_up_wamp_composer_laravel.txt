@@ -14,7 +14,7 @@
 	5.			Criar pasta no www:																				teste_laravel			
 	6.			Descompactar arquivo laravel-master dentro da pasta teste_laravel
 	7. 		Pelo cmd entrar na pasta teste_laravel
-	8.			Fazer o download de todas dependência do framework:						composer install  (demora alguns minutos)
+	8.			Fazer o download de todas dependências do framework:						composer install  (demora alguns minutos)
 	9.			Testes do Laravel
 	9.1.		Teste 1
 				Testar laravel no browser: 																		http://localhost/teste_laravel/laravel/public/
@@ -23,15 +23,14 @@
 				Dentro da pasta ...\www\teste_laravel\laravel rodei o comando: 			php artisan serve
 				O cmd indicou que o laravel server foi iniciado 
 				no http://localhost:8000/
-				Porém, no browser ocorreu o mesmo problema anterior 
-				(Failed to load resource: the server responded with a status
-				of 500 (Internal Server Error))
+				Porém, no browser ocorreu o mesmo problema anterior 						(Failed to load resource: the server responded with a status of 500 (Internal Server Error))
 				
 				Solução:
 							1. Na pasta ...\www\teste_laravel\laravel troque o nome
 							do arquivo .env.example para .env.
 							2. No cmd utilize o comando: 														php artisan key: generate   (para o Teste 1)
 							3. No cmd utilize o comando: 														php artisan serve  (para o Teste 2)
+	10. 		Atualizar os arquivos do Composer dentro da pasta do projeto:			composer update
 ________________________________________________________________________________________________________________________________________________________							
 
 --------------Model-View-Controller (MVC)				
@@ -60,11 +59,19 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________________							
 ________________________________________________________________________________________________________________________________________________________							
 
-	 Eloquent ORM
-	16.		Criar uma classe para representar a tabela 											php artisan make:model nomeTabela
+	 Eloquent ORM - é um framework que vem junto com o Laravel - ajuda a fazer a comunicação com Banco de Dados 
+	 Transição entre o relacional (banco de dados) relacionado a objeto (aplicação)
+	16.		Criar um Modelo para representar a tabela 											php artisan make:model nomeTabela
 	
 			php artisan migrate
 			
 			Rodar todos seeds																						php artisan db:seed 
 			Rodar seed para uma classe especifica 														php artisan db:seed --class=ProdutoTableSeeder
-	
+		
+________________________________________________________________________________________________________________________________________________________							
+
+		COMANDOS PHP Artisan
+		
+		Subir o projeto 																							php artisan serve
+		Criar controller																								php artisan make:controller ProdutoController
+			
