@@ -1,42 +1,44 @@
 ---------- Abrir com o Notepad++
-	----------Tutorial de comandos básicos para utilizar o git
-	----------Vinícius Couto --- ViniCouto (GitHub)
-	----------Data de criação: 08/06/2016
+----------Tutorial de comandos básicos para utilizar o git
+----------Vinícius Couto --- ViniCouto (GitHub)
+
 	
-	1.			Criar pasta:																mkdir nome_pasta
-	2.			Entrar na pasta:														cd nome_pasta
-	3.			Transformar a pasta em repositório do git: 			git init
+	1.			Criar pasta:																				mkdir nome_pasta
+	2.			Entrar na pasta:																		cd nome_pasta
+	3.			Transformar a pasta em repositório do git: 							git init
 	4.			Criar arquivos:
-	5.			Mostrar quais arquivos o git está controlando:		git ls-files
-	6.			Status:																	git status
-	**.		Adicionar ao monitoramento do git todos novos arquivos: git add -A
-	7.			Git monitorar arquivo:												git add tutorial_comandos_do_git.txt
-	8.			Criar commit com mensagem:									git commit -m "Criando o Tutorial de comandos do Git"
-	9.			Indicar quem está fazendo as alterações:				git config user.name "seu nome"
-	9.1.		Indicar quem está fazendo as alterações:				git config user.email "seu email"
-	10.		Adicionar alterações no arquivo:								git add tutorial_comandos_do_git.txt
-	11.		Mostrar histórico de commits:									git log
-	12.		Mostrar histórico de commits em detalhes:				git whatchanged
+	5.			Mostrar quais arquivos o git está controlando:						git ls-files
+	6.			Status:																					git status
+	**.		Adicionar ao monitoramento do git todos novos arquivos: 	git add -A
+	**			Adiciona todos os arquivos do diretório								 	git add .																
+	7.			Git monitorar arquivo:															 	git add tutorial_comandos_do_git.txt
+	**			Adicionando e comitando ao mesmo tempo						 	git commit -a -m "Mensagem do commit"
+	8.			Criar commit com mensagem:												git commit -m "Criando o Tutorial de comandos do Git"
+	9.			Indicar quem está fazendo as alterações:								git config user.name "seu nome"
+	9.1.		Indicar quem está fazendo as alterações:								git config user.email "seu email"
+	10.		Adicionar alterações no arquivo:											git add tutorial_comandos_do_git.txt
+	11.		Mostrar histórico de commits:												git log
+	12.		Mostrar histórico de commits em detalhes:							git whatchanged
 	13.		Mostrar histórico de commits em detalhes
-				o que foi alterado:													git whatchanged -p
+				o que foi alterado:																	git whatchanged -p
 	14.		Criar conta no GitHub:
 	15.		Criar repositório no GitHub:
 	16.		Copiar url do repositório remoto
 	17.		Configurar repositório local para usar o
 				repositório remoto:	
-	17.1.	Nomear repositório remoto: 									git remote add origin url
-	18. 		Jogar arquivos no repositório remoto:					git push origin master
+	17.1.	Nomear repositório remoto: 													git remote add origin url
+	18. 		Jogar arquivos no repositório remoto:									git push origin master
 	19. 		Pegar um repositório para sua máquina:				
 	19.1.	Copiar url do repositório
-	19.2.	Puxar repositório para sua máquina:						git clone url
+	19.2.	Puxar repositório para sua máquina:										git clone url
 	20. 		Adicionar permissões p/ colaborador 
-				enviar commit no repositório:									Settings  ->  Collaborators
-	21. 		Verificar quais branchs tem no repositório:				git branch
-	22. 		Criar nova branch:													git branch nome_do_branch
-	23.		Direcionar para trabalhar na nova branch:				git checkout nome_do_branch
-	24. 		Enviar branch para repositório remoto:					git push -u nome_do_branch
-	25.		Trazer alterações da branch:									git pull
-	26.		Mostrar branchs remotas:										git branch -r
+				enviar commit no repositório:													Settings  ->  Collaborators
+	21. 		Verificar quais branchs tem no repositório:							git branch
+	22. 		Criar nova branch:																	git branch nome_do_branch
+	23.		Direcionar para trabalhar na nova branch:								git checkout nome_do_branch
+	24. 		Enviar branch para repositório remoto:									git push -u nome_do_branch
+	25.		Trazer alterações da branch:													git pull
+	26.		Mostrar branchs remotas:														git branch -r
 	
 	
 	**** Comandos server:
