@@ -1,4 +1,4 @@
-	
+---------- Abrir com o Notepad++
 	----------Tutorial de comandos básicos para utilizar o git
 	----------Vinícius Couto --- ViniCouto (GitHub)
 	----------Data de criação: 08/06/2016
