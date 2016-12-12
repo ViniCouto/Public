@@ -1,5 +1,5 @@
 ---------- Abrir com o Notepad++
-----------Tutorial de comandos básicos para utilizar o git
+----------Tutorial de comandos git
 ----------Vinícius Couto --- ViniCouto (GitHub)
 
 	
@@ -37,8 +37,9 @@
 	22. 		Criar nova branch:																	git branch nome_do_branch
 	23.		Direcionar para trabalhar na nova branch:								git checkout nome_do_branch
 	24. 		Enviar branch para repositório remoto:									git push -u nome_do_branch
-	25.		Trazer alterações da branch:													git pull
-	26.		Mostrar branchs remotas:														git branch -r
+	25.		Trazer alterações da branch:													git pull / git pull origin master
+	26.		Mostrar branchs remotas:														git branch -
+	27.		Jogar o branch criado para o branch master: 						git merge nome-dobranch-criado
 	
 	
 	**** Comandos server:
