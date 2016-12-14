@@ -1,0 +1,23 @@
+---------- Abrir com o Notepad++
+----------Tutorial sobre Queues no Laravel (5.2)
+----------Vinícius Couto --- ViniCouto (GitHub)
+----------Considerações: o projeto no Laravel já está criado
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------TEMPLATE
+
+	1. Configurar 																	No arquivo .env (raiz do projeto) determinar o parametro QUEUE_DRIVER sync -> uso local
+	
+	2. Criar tabela (migrate) de Jobs										php artisan queue:table
+		Executar e mostrar as migrates do projeto						php artisan migrate
+		
+	3. Criar Job																		php artisan make:job CopiaRelease
+		O Job estará no caminho: 												...app\Jobs\CopiaRelease.php
+		
+	4. Estrutura do Job 															No método handle é onde ficará as instruções
+	
+		
+	4. Usar Job a partir do Controller		
+		Declarar no Controller:													use nomeProjeto\Jobs\CopiaRelease;
+		Chama Job no método do Controller								$this->dispatch(new CopiaRelease());
+	5. 
