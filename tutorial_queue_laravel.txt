@@ -19,5 +19,5 @@
 		
 	4. Usar Job a partir do Controller		
 		Declarar no Controller:													use nomeProjeto\Jobs\CopiaRelease;
-		Chama Job no método do Controller								$this->dispatch(new CopiaRelease());
+		Chama Job no método do Controller							$this->dispatch(new CopiaRelease());
 	5. 

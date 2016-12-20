@@ -42,6 +42,7 @@
 	27.		Jogar o branch criado para o branch master: 						git merge nome-dobranch-criado
 	
 	
+	
 	**** Comandos server:
 			services.msc
 			Stop: 	net stop wampapache
