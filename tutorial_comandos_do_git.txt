@@ -28,7 +28,7 @@
 	17.			Configurar repositório local para usar o
 				repositório remoto:	
 	17.1.	Nomear repositório remoto: 													git remote add origin url
-	18. 		Jogar arquivos no repositório remoto:									git push origin master
+	18. 		Jogar arquivos no repositório remoto:									git push -u origin master
 	19. 		Pegar um repositório para sua máquina:				
 	19.1.	Copiar url do repositório
 	19.2.	Puxar repositório para sua máquina:											git clone url
