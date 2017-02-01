@@ -1,7 +1,6 @@
 ---------- Abrir com o Notepad++
 ----------Tutorial de comandos git
 ----------Vinícius Couto --- ViniCouto (GitHub)
---
 
 	
 	1.			Criar pasta:															mkdir nome_pasta

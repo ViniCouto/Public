@@ -6,18 +6,33 @@
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------TEMPLATE
 
-	1. Configurar 																	No arquivo .env (raiz do projeto) determinar o parametro QUEUE_DRIVER sync -> uso local
+	1. Configurar 															No arquivo .env (raiz do projeto) determinar o parametro QUEUE_DRIVER sync -> uso local
+																			Usei o database:QUEUE_DRIVER=database
 	
 	2. Criar tabela (migrate) de Jobs										php artisan queue:table
-		Executar e mostrar as migrates do projeto						php artisan migrate
+		Executar e mostrar as migrates do projeto							php artisan migrate
 		
-	3. Criar Job																		php artisan make:job CopiaRelease
-		O Job estará no caminho: 												...app\Jobs\CopiaRelease.php
+	3. Criar Job															php artisan make:job AtualizacaoServidor
+		O Job estará no caminho: 											...app\Jobs\AtualizacaoServidor.php
 		
-	4. Estrutura do Job 															No método handle é onde ficará as instruções
+	4. Estrutura do Job 													No método handle é onde ficará as instruções
+	
+		4.1 Declarar 														use Illuminate\Contracts\Bus\SelfHandling;
+		4.2 Declarar variaveis protected
+		4.3. Colocar variaveis no método __construct
 	
 		
 	4. Usar Job a partir do Controller		
-		Declarar no Controller:													use nomeProjeto\Jobs\CopiaRelease;
-		Chama Job no método do Controller							$this->dispatch(new CopiaRelease());
+		Declarar no Controller:												use nomeProjeto\Jobs\CopiaRelease;
+		Chamada do Job no método do Controller								$this->dispatch(new CopiaRelease());
+		Execução da Queue via código										$comandoExecutaFila = 'powershell.exe cd D:\novo_toolsqa; php artisan queue:listen --timeout=0';
+																			shell_exec($comandoExecutaFila)
+
 	5. 
+	
+	6. Comandos uteis:														php artisan queue:listen --timeout=0 --tries=1 (comando para start a Queue)
+																			php artisan queue:work connection --daemon
+																			php artisan queue:work connection-name --daemon
+																			
+																			php artisan queue:restart (não é preciso fazer restart do php artisan)
+																			php artisan queue:flush 
