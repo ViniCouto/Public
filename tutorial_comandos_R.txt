@@ -3,4 +3,18 @@
 ----------Vinícius Couto --- ViniCouto (GitHub)
 
 
-1.
+1.		Determinar nome de variável 							x <- 2+2
+2. 	Determinar lista 												lista <- c(1, 1, 2, 3, 5, 8, 13, 21)
+3. 	Plotar histograma												hist(variavel)				exemplo: hist(lista)
+4. 	Abrir documentação da função							? função 					exemplo: ?hist
+5.		Média de uma lista											mean(lista)
+6.		Mediana de uma lista											median(lista)
+7.		Saber se lista é normal										shapiro.test(lista)		se menor que 0,05 não é uma normal
+8.		Média/Mediana da lista										summary(lista)
+9.		Boxplot																boxplot(lista)	
+10.	Salvar gráfico em um imagem 							png(file="C:/Users/Vinícius/Desktop/boxplot.png", width=700, height=700)
+																				boxplot(lista)
+																				dev.off()
+																				open boxplot.png
+11.	Variância 															var(lista)
+12. 	Desvio Padrão													sd(lista)

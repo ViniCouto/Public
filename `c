@@ -1,0 +1,58 @@
+b5d7fb26 (Vinicius Couto Freitas      2016-12-01 09:03:37 -0200  1) ---------- Abrir com o Notepad++
+613f4bc0 (VinÃ­cius Couto Freitas      2016-12-11 23:21:15 -0200  2) ----------Tutorial de comandos git
+8ac2d4cd (Vinicius Couto Freitas      2016-12-01 09:05:08 -0200  3) ----------Vinícius Couto --- ViniCouto (GitHub)
+8ac2d4cd (Vinicius Couto Freitas      2016-12-01 09:05:08 -0200  4) 
+6190db76 (VinÃ­cius Couto Freitas      2016-06-08 12:12:38 -0300  5) 	
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200  6) 	1.			Criar pasta:																					mkdir nome_pasta
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200  7) 	2.			Entrar na pasta:																			cd nome_pasta
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200  8) 	3.			Transformar a pasta em repositório do git: 									git init
+134b6e2c (VinÃ­cius Couto Freitas      2016-06-08 00:32:53 -0300  9) 	4.			Criar arquivos:
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 10) 	5.			Mostrar quais arquivos o git está controlando:								git ls-files
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 11) 	6.			Status:																							git status
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 12) 	**.			Adicionar ao monitoramento do git todos novos arquivos: 		git add -A
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 13) 	**			Adiciona todos os arquivos do diretório								 		git add .																
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 14) 	7.			Git monitorar arquivo:																	git add tutorial_comandos_do_git.txt
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 15) 	**			Adicionando e comitando ao mesmo tempo						 		git commit -a -m "Mensagem do commit"
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 16) 	8.			Criar commit com mensagem:														git commit -m "Criando o Tutorial de comandos do Git"
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 17) 	9.			Indicar quem está fazendo as alterações:										git config user.name "seu nome"
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 18) 	9.1.		Indicar quem está fazendo as alterações:										git config user.email "seu email"
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 19) 	10.			Adicionar alterações no arquivo:												git add tutorial_comandos_do_git.txt
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 20) 	11.			Mostrar histórico de commits:													git log
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 21) 	12.			Mostrar histórico de commits em detalhes:								git whatchanged
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 22) 	13.			Mostrar histórico de commits em detalhes
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 23) 				o que foi alterado:																		git whatchanged -p
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 24) 	14.			Criar conta no GitHub:
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 25) 	15.			Criar repositório no GitHub:
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 26) 	16.			Copiar url do repositório remoto
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 27) 	17.			Configurar repositório local para usar o
+affc0e4b (VinÃ­cius Couto Freitas      2016-06-08 01:07:12 -0300 28) 				repositório remoto:	
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 29) 	17.1.	Nomear repositório remoto: 														git remote add origin url
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 30) 	18. 		Jogar arquivos no repositório remoto:											git push -u origin master
+affc0e4b (VinÃ­cius Couto Freitas      2016-06-08 01:07:12 -0300 31) 	19. 		Pegar um repositório para sua máquina:				
+affc0e4b (VinÃ­cius Couto Freitas      2016-06-08 01:07:12 -0300 32) 	19.1.	Copiar url do repositório
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 33) 	19.2.	Puxar repositório para sua máquina:												git clone url
+a2774c57 (VinÃ­cius Couto Freitas      2016-06-08 01:11:19 -0300 34) 	20. 		Adicionar permissões p/ colaborador 
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 35) 				enviar commit no repositório:														Settings  ->  Collaborators
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 36) 	21. 		Verificar quais branchs tem no repositório:										git branch
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 37) 	22. 		Criar nova branch:																		git branch nome_do_branch
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 38) 	23.		Direcionar para trabalhar na nova branch:										git checkout nome_do_branch
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 39) 	24. 		Enviar branch para repositório remoto:											git push -u nome_do_branch
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 40) 	25.		Trazer alterações da branch:															git pull / git pull origin master
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 41) 	26.		Mostrar branchs remotas:																git branch -
+f798bb93 (Vinicius Couto Freitas - TI 2016-12-27 11:14:29 -0200 42) 	27.		Jogar o branch criado para o branch master: 								git merge nome-dobranch-criado
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 43) 	28.		Quais são as "versões/revisões" do arquivo									git tag
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 44) 	29. 		Diferença do que foi modificado														git diff
+00000000 (Not Committed Yet           2017-02-07 21:23:22 -0200 45) 	30.		Mostrar alterações linha por linha													git blame nome.arquivo		
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 46) 	
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 47) 	
+8b04abd1 (Vinicius Couto Freitas      2016-12-20 16:03:09 -0200 48) 	
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 49) 	**** Comandos server:
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 50) 			services.msc
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 51) 			Stop: 	net stop wampapache
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 52) 						net stop wampmysql
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 53) 						
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 54) 			Start:	net start wampapache
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 55) 						net start wampmysql
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 56) 
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 57) ___________________________________________________________________________________________________________________________________________________________
+1986dead (VCouto                      2016-08-03 17:46:46 -0300 58) 			
