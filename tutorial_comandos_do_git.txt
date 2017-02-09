@@ -36,12 +36,13 @@
 	23.		Direcionar para trabalhar na nova branch:										git checkout nome_do_branch
 	24. 		Enviar branch para repositório remoto:											git push -u nome_do_branch
 	25.		Trazer alterações da branch:															git pull / git pull origin master
-	26.		Mostrar branchs remotas:																git branch -
+	26.		Mostrar branchs remotas:																git branch -r
 	27.		Jogar o branch criado para o branch master: 								git merge nome-dobranch-criado
 	28.		Quais são as "versões/revisões" do arquivo									git tag
 	29. 		Diferença do que foi modificado														git diff
 	30.		Mostrar alterações linha por linha													git blame nome.arquivo		
 	31. 		Mostrar quais os repositorios remotos											git remote
+	32. 		Subir branch criada remota para repositorio 									git push -u origin master
 	
 	
 	
