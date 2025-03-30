@@ -1,6 +1,0 @@
----------- Abrir com o Notepad++
-----------Tutorial de comandos em R - linhas de comando
-----------Vinícius Couto --- ViniCouto (GitHub)
-
-
-1.
